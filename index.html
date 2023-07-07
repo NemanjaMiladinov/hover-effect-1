@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .img {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 5px;
+        background-image: url(venti-views-YA64wHUR0f4-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img:hover {
+        box-shadow: 6px 12px 25px rgba(0, 0, 0, 0.2);
+      }
+      .img-info {
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left: 100px;
+      }
+      .img-info__tittle {
+        color: white;
+        text-transform: uppercase;
+        transition: all 1s;
+      }
+      .img-info__link {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        transition: all 1s;
+      }
+      .link-underline {
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: goldenrod;
+        bottom: -1px;
+        transition: all 1s;
+      }
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+        background-color: rgba(0, 0, 0, 0.103);
+      }
+      .overlay-text {
+        background-color: black;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        height: 80px;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-1">Hover over image to zoom</h1>
+    <div class="img">
+      <div class="image-overlay"></div>
+      <div class="overlay-text"></div>
+      <div class="img-info">
+        <a
+          href="https://unsplash.com/photos/a-dog-jumping-up-into-the-air-to-catch-a-frisbee-YA64wHUR0f4"
+          class="img-info__link"
+          target="_blank"
+        >
+          <h1 class="img-info__tittle">Jumping Dog</h1>
+          https://unsplash.com/image-link
+        </a>
+        <div class="link-underline"></div>
+      </div>
+    </div>
+  </body>
+</html>
