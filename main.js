@@ -12,13 +12,11 @@ const text = document.querySelector(".img-info__tittle");
 // link to the picture source
 const link = document.querySelector(".img-info__link");
 
-// states
 let imageOn = true;
 let textOn = true;
 let linkOn = true;
 let colorOn = true;
 let elementOn = true;
-// ...
 
 const imageZoomAnimation = () => {
   // keyframes
