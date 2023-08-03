@@ -1,3 +1,2 @@
-# jumping-dog-card-animation
-Zoom image when hover over card element
-Skew, color change on other elements
+# hover over image
+https://nemanjamiladinov.github.io/jumping-dog-card-animation/)https://nemanjamiladinov.github.io/jumping-dog-card-animation/
